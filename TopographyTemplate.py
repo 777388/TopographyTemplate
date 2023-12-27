@@ -12,6 +12,6 @@ if (sys.argv[2] == "file"):
         for line in f:
             for character in line:
                 instantiate.instance.append(character)
-topography = lambda node: print(node, end="")
-
-(list(map(topography, instantiate.instance)))
+with open(sys.argv[3], "w") as g:
+    topography = lambda node: print(str(g.write(node)) + node, end="") 
+    (list(map(topography, instantiate.instance)))
